@@ -1,0 +1,73 @@
+body {
+  background-color: #007888;
+}
+
+.vertical-center {
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  padding-bottom: 5vh;
+}
+
+a {
+  color: #007888;
+}
+
+a:hover,
+a:focus {
+  color: #E3DAC9;
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: #007888;
+  background-color: #E3DAC9;
+  border-color: #E3DAC9;
+  height: 48px;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #007888;
+  background-color: #E3DAC9;
+  border-color: #E3DAC9;
+}
+
+.btn-primary:hover {
+  color: #E3DAC9;
+  background-color: #007888;
+  border-color: #122b40;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: none;
+  outline-offset: none;
+}
+
+#getQuote {
+  float: left;
+  font-size: 1.15em;
+}
+
+#twitter {
+  float: right;
+  font-size: 1.75em;
+}
+
+@media screen and (max-width: 549px) {
+  #quote {
+    font-size: 20px;
+  }
+}

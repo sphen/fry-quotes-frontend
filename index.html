@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>fryQuotes</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quote Machine</title>
+    <link rel="stylesheet" href="css/vendor/normalize.css">
+
+    <link rel="stylesheet prefetch" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid vertical-center">
+        <div class="col-xs-6">
+            <div class="row text-center">
+
+                <div class="quote-text">
+                    <h3 id="quote"></h3></div>
+                <p id="author"></p>
+            </div>
+
+            <div class="row text-center buttons">
+
+                <button id="getQuote" title="Get a new random quote" class="btn btn-primary ">
+        Get a New Quote
+      </button>
+                <a href="https://twitter.com/intent/tweet?" data-size="large" class="btn btn-primary" id="twitter" title="Tweet this quote" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <!--
+      <button type='button' class='btn btn-primary'><i class="fa fa-twitter"><a id="twitter"
+  href="https://twitter.com/intent/tweet?" data-size="large" target="_blank">
+        </a></i></button> -->
+
+            </div>
+
+        </div>
+    </div>
+    <script src="js/vendor/jquery-3.1.1.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
