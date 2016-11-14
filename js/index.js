@@ -1,6 +1,5 @@
-// include jQuery.ui to activate colors
-var colors = ['#4A89DC', '#3BAFDA', '#967ADC', '#6A50A7', '#BF263C', '#DA4453', '#E9573F', '#F6BB42', "#E0C341", "#8CC152", "#2ABA66", "#37BC9B", "#7DB1B1"];
-
+var colors = ["#34495E","#4A89DC", "#967ADC", '#6A50A7', "#9b59b6", "#BF263C", "#DA4453","#D35400", "#E9573F", "#F6BB42", "#F1C40F", "#E0C341", "#8CC152", "#2ABA66", "#37BC9B"];
+var white = "#ECF0F1";
 function getNew() {
 
   $.ajax({
@@ -30,16 +29,13 @@ function getNew() {
 
       var color = Math.floor(Math.random() * colors.length);
       $("html body").animate({
-        backgroundColor: colors[color],
-        color: colors[color]
-      }, 1000);
-      $(".buttons").animate({
         backgroundColor: colors[color]
       }, 1000);
+
     },
     cache: false
   });
-};
+}
 
 $(document).ready(getNew);
 

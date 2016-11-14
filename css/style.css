@@ -1,5 +1,15 @@
+@font-face {
+font-family: 'Futurama';
+font-style: normal;
+font-weight: normal;
+src: url('fonts/fr-bold.woff');
+}
+
 body {
   background-color: #007888;
+  color: #ECF0F1;
+  font-family: 'Futurama';
+  letter-spacing: .05em;
 }
 
 .vertical-center {
@@ -17,33 +27,35 @@ body {
 }
 
 a {
-  color: #007888;
+  color: #ECF0F1;
 }
 
 a:hover,
 a:focus {
-  color: #E3DAC9;
+  color: #ECF0F1;
   text-decoration: none;
 }
 
 .btn-primary {
-  color: #007888;
-  background-color: #E3DAC9;
-  border-color: #E3DAC9;
+  color: #ECF0F1;
+  background-color: transparent;
+  border-color: #ECF0F1;
   height: 48px;
+  transition: all 0.5s ease 0s;
+  border-width: 2px;
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
-  color: #007888;
-  background-color: #E3DAC9;
-  border-color: #E3DAC9;
+  color: #ECF0F1;
+  background-color: transparent;
+  border-color: #ECF0F1;
 }
 
 .btn-primary:hover {
-  color: #E3DAC9;
-  background-color: #007888;
-  border-color: #122b40;
+  color: #ECF0F1;
+  background-color: rgba(0, 0, 0, .3);;
+  border-color: #ECF0F1;
 }
 
 .btn.active.focus,
@@ -69,5 +81,11 @@ a:focus {
 @media screen and (max-width: 549px) {
   #quote {
     font-size: 20px;
+  }
+  .btn-primary {
+    margin: .5em;
+  }
+  #getQuote, #twitter {
+    float: none;
   }
 }
