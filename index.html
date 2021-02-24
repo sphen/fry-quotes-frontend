@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-
-    <title>fryQuoteMachine</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/vendor/normalize.css">
-    <link rel="stylesheet prefetch" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet prefetch" href="css/vendor/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body>
-    <div class="container-fluid vertical-center">
-        <div class="col-xs-6">
-            <div class="row text-center">
-                <div class="quote-text">
-                    <h2 id="quote"></h2>
-                </div>
-                <p id="author"></p>
-            </div>
-            <div class="row text-center buttons">
-                <button id="getQuote" title="Get a new random quote" class="btn btn-primary ">
-
-        Get a New Quote
-        </button>
-                <a href="https://twitter.com/intent/tweet?" data-size="large" class="btn btn-primary" id="twitter" title="Tweet this quote" target="_blank">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </div>
+  <head>
+    <title>Fry Random Quotes</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/vendor/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page fadeIn">
+      <div class="quote-wrap">
+        <div class="quote-text">
+          <h1 id="quote"></h1>
         </div>
+        <p id="author"></p>
+        <div>
+          <span id="season"></span>
+          <span id="episode"></span>
+        </div>
+      </div>
+
+      <div class="" id="buttons">
+        <button id="getQuote" title="Get a new random quote" class="btn">
+          Get A New Quote
+        </button>
+        <a
+          class="btn"
+          id="tweet"
+          title="Tweet this quote"
+          target="_blank"
+          rel="_noopener"
+        >
+          Tweet This Quote
+        </a>
+      </div>
     </div>
-
-    <script src="js/vendor/jquery-3.1.1.min.js"></script>
-    <script src="js/vendor/jquery-ui.min.js"></script>
-    <script src="js/index.js"></script>
-
-</body>
-
+    <script type="text/javascript" src="js/index.js" async defer></script>
+    <script
+      type="text/javascript"
+      src="https://platform.twitter.com/widgets.js"
+      async
+      defer
+    ></script>
+  </body>
 </html>
