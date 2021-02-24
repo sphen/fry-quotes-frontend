@@ -6,5 +6,5 @@ The front-end counterpart to the [FryQuotes api](https://github.com/sphen/fry-qu
 
 ## Planned Updates
 
-[x] Add color transitions.
-[x] Update to modern javascript.
+- [x] Add color transitions.
+- [x] Update to modern javascript.
